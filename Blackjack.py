@@ -204,6 +204,7 @@ def dealer_drawing():
 
 # MAIN SCRIPT START HERE
 while True:
+    LOOP = 0
     while True:
         player_asked_money = input(
             'Please enter the value of money you want to start with: ')
