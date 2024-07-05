@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['D:\\Bi\\Codes\\Python\\Python project\\3 (Blackjack)\\Blackjack.py'],
+    ['Blackjack.py'],
     pathex=[],
     binaries=[],
     datas=[],
