@@ -7,7 +7,7 @@ values = {'Two': 2, 'Three': 3, 'Four': 4, 'Five': 5, 'Six': 6, 'Seven': 7, 'Eig
 suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs']
 ranks = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven',
          'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
-
+LOOP = 0
 # Objects
 
 
@@ -218,6 +218,7 @@ while True:
         print('Please enter a number!')
 
     while True:
+        LOOP += 1
         card_pile = Deck()
         bet_ammount = player.bet()
         print('------------------------------------------------------------------------')
@@ -277,6 +278,7 @@ while True:
         print(f'Your money: {player.money}\nDealer money: {dealer.money}')
         print('......................................................................................................')
         print('New round')
+    print(f'You have played {LOOP} rounds.')
     exit_choice = input(
         "Input 'new' if you want to play new game. Otherwise, enter anything to exit: ")
     if exit_choice == 'new':
