@@ -72,7 +72,7 @@ class Player():
                 self.ace.pop(0)
 
     def checkburst(self):
-        """ This method is for checking whether a player has 'bust' """
+        """ This method is for checking whether a player has 'burst' """
         if self.value > 21:
             return True
         else:
