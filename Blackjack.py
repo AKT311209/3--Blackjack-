@@ -214,7 +214,8 @@ while True:
             player = Player('player', int(player_asked_money))
             dealer = Dealer(int(dealer_asked_money))
             card_pile = Deck()
-            print('_____________________________________________________________________________________')
+            print(
+                '_____________________________________________________________________________________')
             break
         print('Please enter a number!')
 
@@ -229,12 +230,13 @@ while True:
         player.drawcard(card_pile.draw())
         dealer.drawcard(card_pile.draw())
         dealer.drawcard(card_pile.draw())
-        if player_drawing() == 'Burst': 
+        if player_drawing() == 'Burst':
             print('*********************************************')
             print('Your cards: ')
             for pcard in player.inhand:
                 print(pcard)
-            print('*********************************************')    # if both burst then player lose.
+            # if both burst then player lose.
+            print('*********************************************')
             print('You BURST!')
             dealer.win(bet_ammount)
             print('You have lost this round.')
@@ -268,6 +270,7 @@ while True:
             else:
                 print('You have drawn with the dealer.')
                 player.win(bet_ammount)
+
         if player.check_lose() is True:
             print('You have LOST the game because you ran out of money')
             break
