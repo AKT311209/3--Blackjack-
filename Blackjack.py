@@ -1,4 +1,4 @@
-""" This is the module imitating the Blackjack game """
+""" This is the python script imitating the Blackjack game """
 import random
 import os
 # Cards
